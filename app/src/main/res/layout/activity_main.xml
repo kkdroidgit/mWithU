@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_unsplash2_blur"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        app:fontFamily="cursive"
+        android:layout_marginTop="128dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:drawableStart="@android:drawable/ic_menu_myplaces"
+        android:hint="@string/username_text"
+        android:inputType="textPersonName"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableStart="@android:drawable/ic_menu_myplaces"
+        android:layout_below="@id/username"
+        android:hint="@string/password_text"
+        android:inputType="textPassword"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/password"
+        android:layout_toRightOf="@id/forgot_password"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_send"
+        android:contentDescription="@string/login_button"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/forgot_password" />
+
+    <LinearLayout
+        android:layout_below="@id/imageButton"
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/facebook_login"
+        android:layout_weight="1"
+        style="?attr/borderlessButtonStyle"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_selector"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_weight="1"
+        style="?attr/borderlessButtonStyle"
+        android:background="@drawable/button_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/google_login"
+        android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/forgot_password"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        tools:text="@string/forgot_password" />
+
+
+    <TextView
+        android:id="@+id/new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:text="@string/new_account"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        tools:text="@string/new_account"
+        android:focusable="true" />
+</RelativeLayout>
