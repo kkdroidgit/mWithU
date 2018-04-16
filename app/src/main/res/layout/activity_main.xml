@@ -79,7 +79,7 @@
         android:layout_marginEnd="8dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_google_login"
         android:layout_weight="1"
         style="?attr/borderlessButtonStyle"
         android:background="@drawable/button_selector"
@@ -117,4 +117,8 @@
         android:textColor="@android:color/black"
         tools:text="@string/new_account"
         android:focusable="true" />
+
+
+
+
 </RelativeLayout>
